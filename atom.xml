@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>写字的地方</title>
+  <title>the Blog</title>
   
-  <subtitle>修炼中，欢迎骚扰</subtitle>
+  <subtitle>写字的地方</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
