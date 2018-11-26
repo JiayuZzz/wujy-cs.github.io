@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>the Blog</title>
+  
+  <subtitle>写字的地方</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-11T11:05:02.666Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Journii</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://yoursite.com/2018/03/11/hello/"/>
+    <id>http://yoursite.com/2018/03/11/hello/</id>
+    <published>2018-03-11T08:38:23.000Z</published>
+    <updated>2018-03-11T11:05:02.666Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="0-欢迎"><a href="#0-欢迎" class="headerlink" title="0.欢迎"></a>0.欢迎</h1><p>这是哪？</p><h1 id="1-再见"><a href="#1-再见" class="headerlink" title="1.再见"></a>1.再见</h1><p>不送.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;0-欢迎&quot;&gt;&lt;a href=&quot;#0-欢迎&quot; class=&quot;headerlink&quot; title=&quot;0.欢迎&quot;&gt;&lt;/a&gt;0.欢迎&lt;/h1&gt;&lt;p&gt;这是哪？&lt;/p&gt;
+&lt;h1 id=&quot;1-再见&quot;&gt;&lt;a href=&quot;#1-再见&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

@@ -81,16 +81,21 @@
 
 
 
-<meta name="description" content="修炼中">
-<meta property="og:type" content="website">
+<meta name="description" content="The Google File System阅读笔记本文为GFS的要点笔记。 系统假定本节为google设计GFS时做出的假设，或者说适合使用GFS的工作场景  系统建立在许多廉价设备上，故障经常发生 系统中存在大量大文件。大文件需要被高效管理，小文件被支持但是不用专门优化 文件写入后很少被修改，即多数情况下是只读的。因此主要优化顺序写，无需高效支持小的随机写。 读分为较大的连续读和较小的随机读。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="the Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/26/GFS/index.html">
 <meta property="og:site_name" content="the Blog">
-<meta property="og:description" content="修炼中">
+<meta property="og:description" content="The Google File System阅读笔记本文为GFS的要点笔记。 系统假定本节为google设计GFS时做出的假设，或者说适合使用GFS的工作场景  系统建立在许多廉价设备上，故障经常发生 系统中存在大量大文件。大文件需要被高效管理，小文件被支持但是不用专门优化 文件写入后很少被修改，即多数情况下是只读的。因此主要优化顺序写，无需高效支持小的随机写。 读分为较大的连续读和较小的随机读。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/assets/img/gfs/1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/gfs/2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/gfs/3.png">
+<meta property="og:updated_time" content="2018-11-26T06:18:07.900Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="the Blog">
-<meta name="twitter:description" content="修炼中">
+<meta name="twitter:description" content="The Google File System阅读笔记本文为GFS的要点笔记。 系统假定本节为google设计GFS时做出的假设，或者说适合使用GFS的工作场景  系统建立在许多廉价设备上，故障经常发生 系统中存在大量大文件。大文件需要被高效管理，小文件被支持但是不用专门优化 文件写入后很少被修改，即多数情况下是只读的。因此主要优化顺序写，无需高效支持小的随机写。 读分为较大的连续读和较小的随机读。">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/gfs/1.png">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/26/GFS/"/>
 
 
 
 
 
-  <title>the Blog</title>
+  <title> | the Blog</title>
   
 
 
@@ -145,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/26/GFS/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -323,9 +325,7 @@
       
 
       
-        
-          
-            <h1 id="The-Google-File-System阅读笔记"><a href="#The-Google-File-System阅读笔记" class="headerlink" title="The Google File System阅读笔记"></a>The Google File System阅读笔记</h1><p>本文为GFS的要点笔记。</p>
+        <h1 id="The-Google-File-System阅读笔记"><a href="#The-Google-File-System阅读笔记" class="headerlink" title="The Google File System阅读笔记"></a>The Google File System阅读笔记</h1><p>本文为GFS的要点笔记。</p>
 <h2 id="系统假定"><a href="#系统假定" class="headerlink" title="系统假定"></a>系统假定</h2><p>本节为google设计GFS时做出的假设，或者说适合使用GFS的工作场景</p>
 <ul>
 <li>系统建立在许多廉价设备上，故障经常发生</li>
@@ -490,8 +490,6 @@
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -508,12 +506,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -523,10 +521,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -534,6 +533,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -772,6 +775,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
